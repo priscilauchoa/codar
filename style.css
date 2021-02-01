@@ -1,0 +1,68 @@
+* {
+	font-family: roboto;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0 30px 0;
+}
+
+.logo {
+	color: #d6000d;
+	font-size: 3em;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.ponto {
+	color: black;
+}
+
+a {
+	color: black;
+	margin: 0 1em 0 1em;
+	font-size: 1.1em;
+}
+.login {
+	background-color: #d6000d;
+	border-radius: 7px;
+	color: white;
+	font-size: 1.1em;
+	padding: 0.3em 2em 0.3em 2em;
+}
+
+main {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 30px 0 30px 0;
+}
+
+.container-da-imagem {
+	width: 500px;
+	position: relative;
+}
+
+img {
+	width: 80%;
+}
+
+.icon {
+	width: 2%;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}
