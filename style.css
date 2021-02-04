@@ -10,20 +10,13 @@
 	width: 80%;
 	margin: 0 auto;
 }
+/* HEADER */
 
 header {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
 	margin: 30px 0 100px 0;
-}
-
-main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 85%;
-	margin: 100px 0 100px 0;
 }
 
 .logo {
@@ -49,6 +42,13 @@ button {
 	font-size: 0.8em;
 	font-weight: bold;
 	padding: 0.4em 2em 0.4em 2em;
+}
+
+/* MAIN */
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .container-da-imagem {
@@ -82,12 +82,11 @@ main > div > p {
 	font-weight: bolder;
 }
 
+/* CHECK */
 .check {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 85%;
-	margin: 200px;
 }
 
 .check-list {
@@ -111,15 +110,39 @@ main > div > p {
 	display: flex;
 	align-items: center;
 }
-.icon {
-	width: 2%;
-}
 
+/* DEPOIMENTOS */
 .depoimentos {
 	margin: 100px;
 }
 
+/* FOOTER */
 footer {
 	background-color: black;
 	color: white;
+}
+
+.icon {
+	width: 2%;
+}
+
+/* CSS GRID */
+.col1-row1 {
+	grid-area: col1-row1;
+}
+.col2-row1 {
+	grid-area: col1-row1;
+}
+.col1-row2 {
+	grid-area: col1-row1;
+}
+.col2-row2 {
+	grid-area: col1-row1;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas: 'col1-row1' 'col2-row1' 'col1-row2' 'col2-row2';
+	grid-gap: 10px;
+	padding: 10px;
 }
