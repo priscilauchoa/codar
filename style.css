@@ -82,10 +82,12 @@ main > div > p {
 	font-weight: bolder;
 }
 
+.centralizar {
+	width: 80%;
+	justify-content: space-between;
+}
+
 .check {
-	align-items: center;
-	justify-content: center;
-	width: 85%;
 	display: flex;
 	justify-content: space-evenly;
 	margin: 200px 0 100px 0;
