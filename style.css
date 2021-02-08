@@ -10,20 +10,13 @@
 	width: 80%;
 	margin: 0 auto;
 }
+/* HEADER */
 
 header {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
 	margin: 30px 0 100px 0;
-}
-
-main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 85%;
-	margin: 100px 0 100px 0;
 }
 
 .logo {
@@ -51,9 +44,11 @@ button {
 	padding: 0.5em 2em 0.5em 2em;
 }
 
-.container-da-imagem {
-	width: 500px;
-	position: relative;
+/* MAIN */
+main {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 input {
@@ -82,12 +77,14 @@ main > div > p {
 	font-weight: bolder;
 }
 
+HEAD
 .centralizar {
 	width: 80%;
 	justify-content: space-between;
 }
 
 .check {
+
 	display: flex;
 	justify-content: space-evenly;
 	margin: 200px 0 100px 0;
@@ -114,9 +111,6 @@ main > div > p {
 	align-items: center;
 	display: flex;
 }
-.icon {
-	width: 2%;
-}
 
 .espacamento {
 	margin-bottom: 15px;
@@ -131,7 +125,80 @@ h2 {
 	margin: 200px;
 }
 
+/* FOOTER */
 footer {
 	background-color: black;
 	color: white;
+}
+
+.icon {
+	width: 2%;
+}
+
+/* CSS GRID */
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+/* .col1-row1 {
+	grid-area: col1-row1;
+}
+.col2-row1 {
+	grid-area: col1-row1;
+}
+.col1-row2 {
+	grid-area: col1-row1;
+}
+.col2-row2 {
+	grid-area: col1-row1;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas: 'col1-row1' 'col1-row1' 'col1-row1' 'col1-row1' 'col1-row1' 'col1-row1' 'col2-row1' 'col1-row2'
+		'col2-row2';
+	grid-gap: 10px;
+	padding: 10px;
+} */
+
+@media only screen and (max-width: 995px) {
+	header {
+		display: block;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	nav > button {
+		display: none;
+	}
+	main,
+	.check {
+		display: block;
+		justify-content: center;
+		margin: 10px;
+		text-align: center;
+	}
+
+	img {
+		margin: 40px;
+	}
+
+	.espacamento {
+		margin: 0 97px 15px;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: 'col1-row1' 'col2-row1' 'col2-row2' 'col1-row2';
+		grid-template-rows: 1fr;
+	}
+
+	/* 
+	.grid-container {
+		display: grid;
+		grid-template-columns: 'col1-row1' 'col2-row1' 'col2-row2' 'col1-row2';
+		grid-gap: 10px;
+		padding: 10px;
+	} */
 }
