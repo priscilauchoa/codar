@@ -37,8 +37,7 @@ button {
 	color: rgba(255, 255, 255, 0.842);
 	font-size: 0.8em;
 	font-weight: bold;
-	padding: 0.4em 2em 0.4em 2em;
-	padding: 0.5em 2em 0.5em 2em;
+	padding: 10px 30px 10px 30px;
 }
 
 /* MAIN */
@@ -54,14 +53,18 @@ main {
 	justify-content: space-evenly;
 }
 
+.posicao-botao {
+	display: flex;
+}
+
 input {
-	background-color: rgba(58, 54, 55, 0.212);
+	background-color: rgba(29, 28, 28, 0.137);
 	border-radius: 7px;
 	border: none;
 	color: grey;
 	font-size: 0.8em;
-	padding: 0.3em 2em 0.3em 2em;
-	padding: 0.5em 2em 0.5em 2em;
+	padding: 10px 30px 10px 30px;
+	margin-right: 10px;
 }
 
 img {
@@ -107,7 +110,6 @@ main > div > p {
 .check-list > div {
 	display: flex;
 	align-items: center;
-	display: flex;
 }
 
 .espacamento {
@@ -127,16 +129,15 @@ h3 {
 .depoimentos {
 	display: flex;
 	justify-content: center;
-	margin: 50px;
 }
 
 .avatar-section {
 	display: -webkit-box;
-	background: rgba(146, 146, 148, 0.308);
+	background: rgba(29, 28, 28, 0.137);
 	border-radius: 10px;
-	padding: 20px;
+	padding: 30px;
 	margin: 30px;
-	width: 531px;
+	width: 500px;
 }
 
 .avatar {
@@ -152,6 +153,7 @@ h3 {
 	width: 70%;
 	text-align: left;
 	margin: 0;
+	word-wrap: break-word;
 }
 /* FOOTER */
 footer {
@@ -159,31 +161,55 @@ footer {
 	color: white;
 }
 .icon {
-	width: 2%;
+	width: 50px;
 	background-color: #d6000d;
+	border-radius: 25px;
 }
 
 .rodape {
-	align-items: center;
 	display: flex;
-	justify-content: space-between;
-	margin: auto;
+	align-items: center;
 }
 
 .div-espacamento {
 	width: 100%;
-	/* margin: 0 0 0 200px; */
+	align-items: center;
+	padding: 100px 50px;
+}
+.div-espacamento > p {
+	font-weight: 200;
+	font-size: 0.8em;
+	color: rgba(255, 255, 255, 0.808);
+}
+.branco {
+	color: white;
 }
 
-@media only screen and (max-width: 995px) {
+h5 {
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+	* {
+		margin: 0;
+	}
+
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
 	header {
 		display: block;
 		text-align: center;
 		margin-bottom: 10px;
 	}
+
 	nav > button {
 		display: none;
 	}
+
 	main,
 	.check {
 		display: block;
@@ -198,5 +224,42 @@ footer {
 
 	.espacamento {
 		margin: 0 97px 15px;
+	}
+	footer {
+		padding: 50px;
+	}
+
+	.rodape {
+		display: block;
+		align-items: center;
+	}
+	.div-espacamento:first-child {
+		text-align: center;
+	}
+	.div-espacamento:first-child p {
+		font-size: 1.5em;
+		margin-bottom: 50px;
+	}
+
+	.div-espacamento {
+		padding: 0;
+	}
+
+	.check-list {
+		display: block;
+	}
+
+	.posicao-botao {
+		display: inline-grid;
+	}
+	input {
+		margin: 0;
+	}
+	.depoimentos {
+		display: block;
+	}
+
+	.icon {
+		margin-left: 0;
 	}
 }
